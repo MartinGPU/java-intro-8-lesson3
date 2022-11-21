@@ -2,8 +2,8 @@ package com.marat;
 
 public abstract class MachineData {
 
-    String machineName;
-    int[] volumePerDay;
+    private final String machineName;
+    private final int[] volumePerDay;
 
     public MachineData(String machineName, int[] volumePerDay) {
         this.machineName = machineName;
@@ -11,4 +11,13 @@ public abstract class MachineData {
     }
 
     abstract int calculateTools();
+
+    public String getMachineName() {
+        return machineName;
+    }
+
+    public int[] getVolumePerDay() {
+        return volumePerDay;
+    }
 }
+

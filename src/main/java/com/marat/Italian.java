@@ -9,15 +9,15 @@ public class Italian extends MachineData {
     @Override
     int calculateTools() {
         int sum = 0;
-        for (int j : volumePerDay) {
+        for (int j : getVolumePerDay()) {
             sum += j;
         }
         if (sum < 70) {
-            System.out.println("план на станке " + machineName + " не выполнен");
+            System.out.println("план на станке " + getMachineName() + " не выполнен");
         } else if (sum == 70) {
-            System.out.println("план на станке " + machineName + " выполнен");
+            System.out.println("план на станке " + getMachineName() + " выполнен");
         } else {
-            System.out.println("план на станке " + machineName + " ПЕРЕвыполнен");
+            System.out.println("план на станке " + getMachineName() + " ПЕРЕвыполнен");
         }
         return sum;
     }
