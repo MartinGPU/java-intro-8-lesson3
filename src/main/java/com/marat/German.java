@@ -6,7 +6,6 @@ public class German extends MachineData {
         super(machineName, volumePerDay);
     }
 
-
     @Override
     int calculateTools() {
         int sum = 0;
