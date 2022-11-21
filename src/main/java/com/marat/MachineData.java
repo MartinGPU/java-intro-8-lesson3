@@ -1,4 +1,4 @@
-package com.marat3;
+package com.marat;
 
 public abstract class MachineData {
 
