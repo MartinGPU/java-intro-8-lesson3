@@ -10,10 +10,10 @@ public class Italian extends MachineData {
     }
 
     @Override
-    int calculateTools() {
+    int calculateTools(Map<String, Integer> map) {
         int sum = 0;
 
-        for(Map.Entry<String, Integer> e : getVolumePerDay().entrySet()){
+        for(Map.Entry<String, Integer> e : map.entrySet()){
             sum += e.getValue();
         }
 

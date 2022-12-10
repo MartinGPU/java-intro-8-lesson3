@@ -26,8 +26,8 @@ public class Main {
         map.put("итальянец 7", 8);
         Italian italian = new Italian("итальянец", map2);
 
-        int germanSum = german.calculateTools();
-        int italianSum = italian.calculateTools();
+        int germanSum = german.calculateTools(map);
+        int italianSum = italian.calculateTools(map2);
 
         if (germanSum + italianSum == 140) {
             System.out.println("итоговый план выполнен");

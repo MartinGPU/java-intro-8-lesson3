@@ -12,7 +12,7 @@ public abstract class MachineData {
         this.volumePerDay = volumePerDay;
     }
 
-    abstract int calculateTools();
+    abstract int calculateTools(Map<String, Integer> map);
 
     public String getMachineName() {
         return machineName;
