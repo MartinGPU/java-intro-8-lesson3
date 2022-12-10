@@ -14,6 +14,7 @@ public class German extends MachineData {
         for (int j : getVolumePerDay()) {
             sum += j;
         }
+
         if (sum < 70) {
             System.out.println("план на станке " + getMachineName() + " не выполнен");
         } else if (sum == 70) {
