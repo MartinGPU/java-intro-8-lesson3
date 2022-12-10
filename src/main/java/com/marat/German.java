@@ -1,16 +1,18 @@
 package com.marat;
 
+import java.util.Map;
+
 public class German extends MachineData {
 
-    public German(String machineName, int[] volumePerDay) {
+    public German(String machineName, Map<String, Integer> volumePerDay) {
         super(machineName, volumePerDay);
     }
 
     @Override
     int calculateTools() {
         int sum = 0;
-        for (int j : getVolumePerDay()) {
-            sum += j;
+        for(Map.Entry<String, Integer> e : getVolumePerDay().entrySet()){
+            sum += e.getValue();
         }
         if (sum < 70) {
             System.out.println("план на станке " + getMachineName() + " не выполнен");
