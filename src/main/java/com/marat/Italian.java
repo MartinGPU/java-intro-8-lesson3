@@ -4,7 +4,6 @@ import java.util.Map;
 
 public class Italian extends MachineData {
 
-
     public Italian(String machineName, Map<String, Integer> volumePerDay) {
         super(machineName, volumePerDay);
     }
@@ -12,8 +11,7 @@ public class Italian extends MachineData {
     @Override
     int calculateTools(Map<String, Integer> map) {
         int sum = 0;
-
-        for(Map.Entry<String, Integer> e : map.entrySet()){
+        for (Map.Entry<String, Integer> e : map.entrySet()) {
             sum += e.getValue();
         }
 

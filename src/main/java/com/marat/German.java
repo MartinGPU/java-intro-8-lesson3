@@ -11,9 +11,10 @@ public class German extends MachineData {
     @Override
     int calculateTools(Map<String, Integer> map) {
         int sum = 0;
-        for(Map.Entry<String, Integer> e : map.entrySet()){
+        for (Map.Entry<String, Integer> e : map.entrySet()) {
             sum += e.getValue();
         }
+
         if (sum < 70) {
             System.out.println("план на станке " + getMachineName() + " не выполнен");
         } else if (sum == 70) {
