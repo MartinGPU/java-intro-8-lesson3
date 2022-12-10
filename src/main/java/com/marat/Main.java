@@ -1,10 +1,30 @@
 package com.marat;
 
+import java.util.*;
+
 public class Main {
 
     public static void main(String[] args) {
-        German german = new German("немец", new int[]{20, 10, 10, 10, 10, 10, 10});
-        Italian italian = new Italian("итальянец", new int[]{9, 10, 10, 10, 10, 10, 10});
+
+        Set<Integer> set = new HashSet<>();
+        set.add(16);
+        set.add(11);
+        set.add(10);
+        set.add(9);
+        set.add(4);
+        set.add(7);
+        set.add(8);
+        German german = new German("немец", set);
+
+        Set<Integer> set2 = new HashSet<>();
+        set.add(18);
+        set.add(12);
+        set.add(10);
+        set.add(9);
+        set.add(3);
+        set.add(7);
+        set.add(4);
+        Italian italian = new Italian("итальянец", set2);
 
         int germanSum = german.calculateTools();
         int italianSum = italian.calculateTools();

@@ -1,8 +1,11 @@
 package com.marat;
 
+import java.util.Set;
+
 public class Italian extends MachineData {
 
-    public Italian(String machineName, int[] volumePerDay) {
+
+    public Italian(String machineName, Set<Integer> volumePerDay) {
         super(machineName, volumePerDay);
     }
 

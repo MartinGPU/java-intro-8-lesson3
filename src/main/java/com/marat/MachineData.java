@@ -1,11 +1,13 @@
 package com.marat;
 
+import java.util.Set;
+
 public abstract class MachineData {
 
     private final String machineName;
-    private final int[] volumePerDay;
+    private final Set<Integer> volumePerDay;
 
-    public MachineData(String machineName, int[] volumePerDay) {
+    public MachineData(String machineName, Set<Integer> volumePerDay) {
         this.machineName = machineName;
         this.volumePerDay = volumePerDay;
     }
@@ -16,7 +18,7 @@ public abstract class MachineData {
         return machineName;
     }
 
-    public int[] getVolumePerDay() {
+    public Set<Integer> getVolumePerDay() {
         return volumePerDay;
     }
 }
