@@ -1,8 +1,10 @@
 package com.marat;
 
+import java.util.List;
+
 public class German extends MachineData {
 
-    public German(String machineName, int[] volumePerDay) {
+    public German(String machineName, List<Integer> volumePerDay) {
         super(machineName, volumePerDay);
     }
 
