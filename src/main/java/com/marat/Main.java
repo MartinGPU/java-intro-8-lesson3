@@ -5,7 +5,6 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-
         Map<String, Integer> map = new HashMap<>();
         map.put("немец 1", 16);
         map.put("немец 2", 11);
